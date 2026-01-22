@@ -1,16 +1,48 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Frontend README 
 
-Currently, two official plugins are available:
+```markdown
+#  WhatsApp Chat Analyzer - Frontend (React)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, responsive dashboard built with React.js to visualize WhatsApp group engagement. 
 
-## React Compiler
+##  Dashboard Features
+- **Engagement Chart**: Visualizes Messaging Users vs. New Joins over the last 7 days.
+- **Power User List**: Highlights members with high retention and activity.
+- **Clean UI**: High-contrast, white-themed dashboard for better readability.
+- **Responsive Design**: Fully functional on mobile, tablet, and desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- **Framework**: React.js (Vite)
+- **Charts**: Recharts
+- **Icons**: Lucide-React
+- **API Client**: Axios
 
-## Expanding the ESLint configuration
+## Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/prisam1/whatsapp_chat_analyzer.git](https://github.com/prisam1/whatsapp_chat_analyzer.git)
+   cd whatsapp_chat_analyzer
+Install Dependencies:
+
+Bash
+
+npm install
+Start the Development Server:
+
+Bash
+
+npm run dev
+The app will be available at http://localhost:5173.
+
+## Connection to Backend
+Ensure the Python Backend is running on http://localhost:8000 for the analysis to work.
+
+## Usage
+Export your WhatsApp chat (without media) as a .txt file.
+
+Drag and drop or select the file in the dashboard.
+
+View your group's insights!
